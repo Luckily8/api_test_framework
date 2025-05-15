@@ -1,0 +1,9 @@
+# 配置文件说明:
+# base_url: 定义API请求的基础URL地址，所有接口请求都将在此基础上拼接路径。
+# timeout: 设置接口请求的超时时间（单位：秒），超过该时间未响应则请求失败。
+# headers: 定义全局请求头，所有接口请求默认携带这些头部信息。例如，Content-Type指定请求体的数据格式为JSON。
+base_url: "http://localhost:80"
+timeout: 10
+headers:
+  Content-Type: "application/json"
+  token: "eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6OCwiZXhwIjoxNzQ3MzU5MTMwfQ.Uo7tA9CRURDY7HyLyC5Ose4g4filGW71u_enp96pyCI"

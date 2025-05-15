@@ -1,0 +1,20 @@
+# test_data.yaml
+# 用于接口自动化测试的数据文件
+# cases: 包含多个测试用例的列表，每个用例包含以下字段：
+#   - method: 请求方法，如 "GET"、"POST" 等
+#   - endpoint: 接口的路径
+#   - payload: 请求体内容，若无请求体则为 null
+#   - expected: 期望的响应结果
+#       - status_code: 期望的 HTTP 状态码
+#       - response: 期望的响应体内容
+#           - success: 期望返回的 success 字段值
+cases:
+  - method: "GET"
+    endpoint: "/api/employee/page?page=1&pageSize=10"
+    payload: null
+    expected:
+      status_code: 200
+      response:
+        code: 1
+        msg: null
+        
